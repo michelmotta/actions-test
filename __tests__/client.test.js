@@ -11,7 +11,7 @@ const pgclient = new Client({
 describe("Database Conection Test", () => {
     
     beforeAll(async () => {
-        
+
         pgclient.connect();
         
         const table = 'CREATE TABLE student(id SERIAL PRIMARY KEY, firstName VARCHAR(40) NOT NULL, lastName VARCHAR(40) NOT NULL, age INT, address VARCHAR(80), email VARCHAR(40))'
@@ -31,6 +31,6 @@ describe("Database Conection Test", () => {
 
         const result = await pgclient.query('SELECT * FROM student WHERE id = 1')
 
-        expect(result).toEqual([{id: 1, firstname: 'Mona the', lastname: 'Octocat', age: 9, address: '88 Colin P Kelly Jr St, San Francisco, CA 94107, United States', email: 'octocat@github.com'}]);
+        expect(result.rows).toEqual([{id: 1, firstname: 'Mona the', lastname: 'Octocat', age: 9, address: '88 Colin P Kelly Jr St, San Francisco, CA 94107, United States', email: 'octocat@github.com'}]);
     })
 });
