@@ -4,7 +4,7 @@
   "description": "Testes do Github Actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/michelmotta/actions-test#readme",
   "dependencies": {
     "pg": "^8.6.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
   }
 }
