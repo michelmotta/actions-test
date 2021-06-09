@@ -33,4 +33,8 @@ describe("Database Conection Test", () => {
 
         expect(result.rows).toEqual([{id: 1, firstname: 'Mona the', lastname: 'Octocat', age: 9, address: '88 Colin P Kelly Jr St, San Francisco, CA 94107, United States', email: 'octocat@github.com'}]);
     })
+
+    afterAll(async () => {
+        await pgclient.end()
+    })
 });
