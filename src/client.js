@@ -1,6 +1,6 @@
 const { Client } = require('pg');
 
-const pgclient = new Client({
+/* const pgclient = new Client({
     host: process.env.POSTGRES_HOST,
     port: process.env.POSTGRES_PORT,
     user: 'postgres',
@@ -26,4 +26,4 @@ pgclient.query('SELECT * FROM student', (err, res) => {
     if (err) throw err
     console.log(err, res.rows) // Print the data in student table
     pgclient.end()
-});
+}); */
