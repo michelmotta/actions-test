@@ -4,7 +4,7 @@
   "description": "Testes do Github Actions",
   "main": "index.js",
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
