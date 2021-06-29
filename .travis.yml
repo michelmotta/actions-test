@@ -2,9 +2,20 @@ language: node_js
 
 node_js:
  - stable
- 
+
 install:
   - npm install
- 
+
+services:
+  - postgresql
+
+env:
+  global:
+    - POSTGRES_HOST=localhost
+    - POSTGRES_PORT=5433
+
+before_script:
+  - psql -c 'create database postgres;' -U postgres
+
 script:
   - npm test
