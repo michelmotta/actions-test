@@ -3,9 +3,6 @@ language: node_js
 node_js:
  - stable
 
-install:
-  - npm install
-
 services:
   - postgresql
 
@@ -14,5 +11,15 @@ env:
     - POSTGRES_HOST=localhost
     - POSTGRES_PORT=5432
 
+addons:
+  sonarcloud:
+    organization: "michelmotta"
+    token:
+      secure: "9ebb0a780d5b314908dae38db1d91ac308448de1"
+
+install:
+  - npm install
+
 script:
   - npm test
+  - sonar-scanner
