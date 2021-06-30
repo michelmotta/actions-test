@@ -15,7 +15,7 @@ addons:
   sonarcloud:
     organization: "michelmotta"
     token:
-      secure: "b69617cf732223f2c4121799d42bd829fa915079"
+      secure: "DBV0ayDeocOrMC2UsS+XsGc0JFXLTxMgS0gyTeDNgrnRYuiVB+6A+17WW2ztQyngCz80z/40rgecQJmp2vo6bWkafCDDaiGmGa7EU6Ss4KxrTY9woB66tcI7BeLUSlZFLPVZI1s/khU8xcohO764+8cGohr+xoPPFyWc6fUfYOTb4BOfJe9dfBfOfekifxc+V/+1wN4tNp0h9UGoEWbfD3I42zsJL0CQnuZP6tCCg5B54j2IMIB5qtWVC0uIBnyZBMTa0MEwaurEA9nszHTzSOlmXLxWChfpwkgr9YTHnjHvwdXwg3IUHlva4UT3VMyPG9ryh2crRipc8Z5kndNpdPsJJB4R6SbDNACbCSZy3aOO9pnYoUApGQxawE9c3dPQHbh+NKlDuaJM/8v4xbAUeuj7jEBWVszjIMyzsydchMggEui2UBcmhih8XWUlDQk0BzetYovuvDY83ynvDpmeOt9l+M4BO1N553rEFpQKR+zCW8ANOwV9VtNozLEUO32PoYy2iEosIDreaboxO7NldYMWbhdxIFvQEidStsZNiUUXCApdelQAOrw23iTX0GAgH9GvuXoOSSI/ndob4HQtP51C6RclXTovK0XxJvS2CE/YoxpWw0Nhnu1yNzQyZYxLs94hPqMZ0NpONeHVlYq9z5+HP2WaAPiisolkQmgp4Ek="
 
 install:
   - npm install
